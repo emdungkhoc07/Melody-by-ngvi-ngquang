@@ -1,0 +1,43 @@
+{
+  "$schema": "../node_modules/@tauri-apps/cli/config.schema.json",
+  "productName": "OmniMusicPlayer",
+  "version": "2.0.0",
+  "identifier": "com.omnimusic.player",
+  "build": {
+    "frontendDist": "../GiaoDien"
+  },
+  "app": {
+    "windows": [
+      {
+        "title": "OmniMusicPlayer",
+        "width": 1240,
+        "height": 820,
+        "minWidth": 960,
+        "minHeight": 650,
+        "resizable": true,
+        "fullscreen": false,
+        "decorations": false,
+        "center": true,
+        "focus": true,
+        "visible": true,
+        "transparent": false,
+        "dragDropEnabled": false
+      }
+    ],
+    "withGlobalTauri": true,
+    "security": {
+      "csp": null
+    }
+  },
+  "bundle": {
+    "active": true,
+    "targets": "all",
+    "icon": [
+      "BieuTuong/32x32.png",
+      "BieuTuong/128x128.png",
+      "BieuTuong/128x128@2x.png",
+      "BieuTuong/icon.icns",
+      "BieuTuong/icon.ico"
+    ]
+  }
+}
